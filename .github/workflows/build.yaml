@@ -11,10 +11,10 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v2
 
-      - name: Node Version
+      - name: Node 16 Fix
         uses: actions/setup-node@v2
-          with:
-            node-version: '16'
+        with:
+          node-version: '16'
 
       - name: Check Node v
         run: node -v
